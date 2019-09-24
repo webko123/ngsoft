@@ -1,0 +1,100 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Assistant"
+  rel="stylesheet"
+/>
+<!-- <img class="nav-bar" src="assets/img/test88.png"> -->
+<img class="nav-bar" src="assets/img/test3.png" />
+
+<p class="title1">טופס איכות הסביבה</p>
+<br />
+<img class="main-img" src="assets/img/step3.png" />
+<br />
+<p class="title2">פרטי המשלוח</p>
+<img class="alert-img" src="assets/img/alert.png" />
+
+<p class="title2_1">
+        לתשומת ליבך, יש למלא את כל הפרטים המסומנים כדי להמשיך
+</p>
+
+<mat-card>
+  <p class="title3">יעד למשלוח</p>
+  <p class="title3_1">אזור היעד</p>
+
+  <div class="example-container">
+        <mat-radio-group aria-label="Select an option" labelPosition="before"  >
+                <mat-radio-button  value= true> איו''ש</mat-radio-button>
+                &nbsp; 	&nbsp; 	&nbsp; &nbsp; 	&nbsp; 	&nbsp; &nbsp; &nbsp; 	
+                <mat-radio-button value= false >עזה</mat-radio-button>
+               
+              </mat-radio-group>
+
+              <br><br>
+
+    <mat-form-field class="test1">
+      <input [formControl]="name" required matInput placeholder="שם מקבל המשלוח/חברה" />
+     
+    <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="test1">
+            <input [formControl]="adress" matInput placeholder="כתובת" />
+            <mat-error *ngIf="adress.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <mat-label>מעבר מבוקש</mat-label>
+              <mat-select [formControl]="pass">
+                <mat-option *ngFor="let pass of passes" [value]="pass.id">
+                  {{pass.title}}
+                  
+                </mat-option>
+               
+              </mat-select>
+              <mat-error *ngIf="pass.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+    <mat-form-field class="test1">
+            <input [formControl]="driver" matInput placeholder="שם הנהג" />
+            <mat-error *ngIf="driver.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="test1">
+                <input [formControl]="phone" matInput placeholder="מספר טלפון של מקבל המשלוח" />
+                <mat-error *ngIf="phone.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+
+              <mat-form-field class="test1">
+                  <input [formControl]="id" matInput placeholder="ת''ז הנהג" />
+                  <mat-error *ngIf="id.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+          
+
+  </div>
+</mat-card>
+
+<br />
+<br />
+
+<mat-card>
+       
+  <p class="title3">מידע נוסף (אופציונלי)</p>
+  <img class="what-img" matTooltip="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס" src="assets/img/what.png" />
+  <p class="title3_1">צירוף מסמכים נוספים לבקשה (אופציונלי) </p>
+  
+
+  <div class="example-container">
+
+        <div class="form-group">
+                <label for="file">העלאת קובץ</label>
+                <input type="file">
+            </div>
+            <br>
+
+        <mat-form-field>
+                <textarea matInput placeholder="הערות לבקשה (אופציונלי)"></textarea>
+              </mat-form-field>
+  </div>
+</mat-card>
+<br>
+<img class="next-img" mat-button routerLink="/step3" src="assets/img/next.png" />
+

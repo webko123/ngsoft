@@ -1,0 +1,161 @@
+
+
+.nav-bar{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
+.main-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+
+.line-img{
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 30%;
+  }
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+
+.title1{
+  font-size: 35px;
+  color: #0f69f7;
+  font-family: "Assistant";
+  text-align: center;
+ 
+}
+
+.title2{
+  font-size: 25px;
+  color: #000000;
+  font-family: "Assistant";
+  text-align: right;
+  margin-right: 9%;
+  font-weight: bold;
+ 
+}
+
+.title3{
+  font-size: 22px;
+  color: #0f69f7;
+  font-family: "Assistant";
+  text-align: right;
+  margin-right: 2.5%;
+ // font-weight: bold;
+ 
+}
+.t1{
+    font-size: 14px;
+    color: #0f69f7;
+    font-family: "Assistant";
+    text-align: right;
+    margin-right: 2.5%;
+     font-weight: bold;
+}
+
+
+
+
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  display: block;
+  position: relative;
+  padding: 82px;
+  margin-left: 9%;
+  margin-right: 9%;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.mat-form-field {
+  display: inline-block;
+ // position: relative;
+  text-align: right;
+  color: #000000 !important;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  color: #000000 !important;
+  // margin-left: auto;
+  // margin-right: auto;
+    width: 53%;
+   
+  margin-left: 78%;
+  margin-right: 100%;
+
+  // margin-left: 700%;
+  // margin-right: -762%;
+}
+
+.example-container > * {
+  width: 53%;
+}
+
+select {
+  text-align-last: right;
+}
+
+option {
+  direction: rtl;
+}
+
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: rgb(0, 0, 0) !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color:  #0f69f7 !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color:  #0f69f7 !important;
+}
+
+::ng-deep .mat-form-field-placeholder{
+
+  color:black;
+}
+
+::ng-deep .mat-focused .mat-form-field-placeholder{
+
+  color:black;
+}
+
+::ng-deep .mat-form-field-label{
+  color:black !important;
+}
+
+.next-img{
+  float: left;
+  width: 12.5%;
+  margin-left: 8%;
+}
+
+.back-img{
+
+    float: right;
+    width: 12.5%;
+    margin-right: 8%;
+    border: 0.5px;
+}
+
+
+
+

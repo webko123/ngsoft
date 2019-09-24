@@ -1,0 +1,78 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Assistant"
+  rel="stylesheet"
+/>
+<!-- <img class="nav-bar" src="assets/img/test88.png"> -->
+<img class="nav-bar" src="assets/img/test3.png" />
+
+<p class="title1">טופס איכות הסביבה</p>
+<br />
+<img class="main-img" src="assets/img/step1.png" />
+<br />
+<p class="title2">אישור וסיום</p>
+
+<mat-card>
+  <p class="title3">פרטי המבקש</p>
+
+  <div class="example-container">
+    
+  <p class="t1"> :שם הספק</p> 
+  <br>
+  <p class="t1"> :מספר ח''פ</p>
+  <br>
+  <p class="t1"> :מקור הטובין</p>
+<br>
+
+<!-- <img class="line-img" src="assets/img/line.png" /> -->
+  
+  </div>
+
+  
+</mat-card>
+
+
+
+<br />
+<br />
+
+<mat-card>
+  <p class="title3">פרטי איש קשר בחברה</p>
+
+  <div class="example-container">
+      <mat-form-field>
+      <input [formControl]="fullName" matInput placeholder="שם מלא" />
+      <mat-error *ngIf="fullName.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+    <input [formControl]="email" matInput placeholder="כתובת דוא''ל" />
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+
+    <mat-form-field class="test1">
+      <input matInput placeholder="מספר טלפון נוסף (אופציונלי) " />
+    </mat-form-field>
+
+    <mat-form-field>
+    <input [formControl]="id" matInput placeholder="ת''ז" />
+    <mat-error *ngIf="id.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+  <input [formControl]="phone" matInput placeholder="מספר טלפון נייד" />
+  <mat-error *ngIf="phone.invalid">{{getErrorMessage()}}</mat-error>
+</mat-form-field>
+
+    <mat-form-field class="test1">
+      <input matInput placeholder="מספר פקס (אופציונלי)" />
+    </mat-form-field>
+  </div>
+</mat-card>
+
+<br>
+
+<img class="next-img" mat-button routerLink="/step2" src="assets/img/next.png" />  <img class="back-img" mat-button routerLink="/step2" src="assets/img/back.png" />
+
+
+
